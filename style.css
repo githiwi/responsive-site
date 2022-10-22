@@ -1,0 +1,105 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+
+  /* colors */
+  --primary: teal;
+  --white: #fdfdfd;
+  --black: #030303;
+
+  /* padding/margin */
+  --small: 1rem;
+  --large: 1.8rem;
+  --very-lage:40rem;
+}
+
+body {
+  font-size: 1.4rem;
+  color: var(--primary);
+  font-family: monospace;
+}
+h1{
+  padding-top: var(--large);
+  padding-bottom: var(--large);
+}
+
+img{
+width: 100%;
+
+}
+aside{
+  width: 10%;
+  justify-content: flex-end;
+}
+nav{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 30px;
+  background-color: var(--black);
+  /* height: 50px; */
+  
+}
+nav a{
+padding: 15px;
+text-decoration: none;
+color:var(--white);
+}
+
+main{
+  margin: var(--large);
+}
+form{
+background-color: var(--black);
+margin-top: var(--large);
+width: 100%;
+padding: var(--large);
+}
+
+form > *{
+ width: 100%;
+}
+form input{
+  margin-top: var(--small);
+  margin-bottom: var(--small);
+}
+form p{
+  color: var(--white);
+}
+.fordesk{
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+.seventy{
+  width: 80%;
+  margin: auto;
+}
+.sixty{
+  width: 80%;
+  
+  margin: auto;
+}
+@media screen and (max-width:768px){
+  nav{
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+  }
+  img{
+    width: 100%;
+
+  }
+  aside{
+    display: none;
+  }
+}
